@@ -22,6 +22,7 @@ div.introbox {
 
 div.teammates {
 	/*background-color: red;*/
+
 }
 
 
@@ -34,6 +35,7 @@ div.teammate img {
 	width: 80%;
 	border-radius: 50%;
 	margin: 10%;
+	box-shadow: 0px 0px 7px 5px #FFFFFF;
 }
 
 h1, h2, h3, h4 {
