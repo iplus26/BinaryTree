@@ -1,0 +1,46 @@
+html, body {
+	margin:  0;
+	padding: 0;
+}
+
+div.page {
+	height: 100%;
+	width:  100%;
+}
+
+div.intro {
+	/*background-color: blue;*/
+}
+
+div.introbox {
+	/*background-color: green;*/
+	height: 40%;
+	margin: auto;
+}
+
+
+
+div.teammates {
+	/*background-color: red;*/
+}
+
+
+div.teammate {
+	width: 25%;
+	float: left;
+}
+
+div.teammate img {
+	width: 80%;
+	border-radius: 50%;
+	margin: 10%;
+}
+
+h1, h2, h3, h4 {
+	width: 100%;
+	text-align: center;
+}
+
+h3 {
+	color: grey;
+}
