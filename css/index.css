@@ -1,28 +1,85 @@
 html, body {
 	margin: 0;
 	padding: 0;
-}
-
-
-div#header {
-	
+	background-color: #263238;
+	color: #C8D8DC;
+	font-family: "Source Han Sans CN";
 }
 
 div#header div {
 	float: left;
-	background-color: #91B4F5;
-	height: 5%;
+	background-color: #80CBC4;
+	/*box-shadow: 0 0 1em 3px #263238;*/
+	text-align: center;
+	color: #263238;
+	line-height: 34px;
+	min-height: 34px;
 }
-div#hamburg {
-	width: 20%;
+
+i.icono-hamburger, i.icono-plus {
+	color: #263238;
+}
+
+div#hamburger {
+	width: 10%;
+	min-width: 34px;
 }
 
 div#title {
-	width: 60%;
-	background-color: blue;
+	width: 80%;
 }
 
 div#add {
-	width: 20%;
+	width: 10%;
+	min-width: 34px;
 }
 
+table {
+	padding: 1em;
+	text-align: center;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+ 	border-bottom: 1px dashed #7BCBC4;
+ 	padding: .3em;
+ 	height: 3em;
+}
+
+tr.alt td {
+	/*background-color: #CAD3DE;*/
+}
+
+td.icon {
+	width: 15%;
+}
+td.category {
+	text-align: left;
+	width: 40%;
+}
+
+td.record {
+	text-align: right;
+}
+
+td.cost {
+	color: #FF5370;
+}
+td.earn {
+	color: #91B4F5;
+}
+
+i.icono-iphone, i.icono-market {
+	/*color: white;*/
+}
+
+div.copyright {
+	position: fixed;
+	background-color: #80CBC4;
+	bottom: 0em;
+	width: 100%;
+	text-align: center;
+	line-height: 24px;
+	color: #263238;
+}
