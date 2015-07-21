@@ -1,0 +1,28 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+
+div#header {
+	
+}
+
+div#header div {
+	float: left;
+	background-color: #91B4F5;
+	height: 5%;
+}
+div#hamburg {
+	width: 20%;
+}
+
+div#title {
+	width: 60%;
+	background-color: blue;
+}
+
+div#add {
+	width: 20%;
+}
+
