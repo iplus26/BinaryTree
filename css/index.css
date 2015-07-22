@@ -3,7 +3,7 @@ html, body {
 	padding: 0;
 	background-color: #263238;
 	color: #C8D8DC;
-	font-family: "Source Han Sans CN";
+	font-family: "Source Han Sans CN", sans-serif;
 }
 
 div#header div {
