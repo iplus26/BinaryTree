@@ -34,6 +34,10 @@ div#add {
 	min-width: 34px;
 }
 
+div.clearup {
+	clear: both;
+}
+
 table {
 	padding: 1em;
 	text-align: center;
@@ -75,7 +79,7 @@ i.icono-iphone, i.icono-market {
 }
 
 div.copyright {
-	position: fixed;
+	/*position: fixed;*/
 	background-color: #80CBC4;
 	bottom: 0em;
 	width: 100%;
