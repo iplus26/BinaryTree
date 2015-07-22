@@ -45,20 +45,22 @@ storage.data = JSON.stringify(fake);
 var data = JSON.parse(storage.data);
 console.log(data);
 
-// var getDate = function(strDate) {
-//     var st = strDate;
-//     var a = st.split(" ");
-//     var b = a[0].split("-");
-//     var c = a[1].split(":");
-//     var date = new Date(b[0], b[1], b[2], c[0], c[1], c[2]);
-//     return date;
-// };
+var today = new Date();
+Date.prototype.today = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + today.getDate();
+Date.prototype.yesterday = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + (today.getDate() - 1);
+
+Date.prototype.format = function() {
+    var str = this.getFullYear() + "/" + (this.getMonth() + 1) + "/" + this.getDate();
+    if (str == this.today) return "今天";
+    if (str == this.yesterday) return "昨天";
+    return str;
+};
 
 ( function showData() {
     for (var i = 0; i < data.length; i++) {
         table.innerHTML += ("<tr><td class=\"icon\">" + data[i].category + "</td>") +
             ("<td class=\"category\">" + data[i].note + "</td>") +
             ("<td class=\"record " + (data[i].type === -1 ? "cost\">- " : "earn\">+ ") + data[i].num + "</td>") +
-            ("<td class=\"date\">" + new Date(data[i].date).toDateString() + "</td></tr>");
+            ("<td class=\"date\">" + (new Date(data[i].date)).format() + "</td></tr>");
     }
 } )();

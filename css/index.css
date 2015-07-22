@@ -22,7 +22,7 @@ i.icono-hamburger, i.icono-plus {
 
 div#hamburger {
 	width: 10%;
-	min-width: 34px;
+	/*min-width: 34px;*/
 }
 
 div#title {
@@ -31,7 +31,7 @@ div#title {
 
 div#add {
 	width: 10%;
-	min-width: 34px;
+	/*min-width: 34px;*/
 }
 
 div.clearup {
@@ -49,6 +49,8 @@ td {
  	border-bottom: 1px dashed #7BCBC4;
  	padding: .3em;
  	height: 3em;
+ 	word-break: keep-all;
+ 	white-space:nowrap;
 }
 
 tr.alt td {
@@ -72,6 +74,11 @@ td.cost {
 }
 td.earn {
 	color: #91B4F5;
+}
+
+td.date {
+	vertical-align: sub;
+	font-size: .5em;
 }
 
 i.icono-iphone, i.icono-market {
