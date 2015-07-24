@@ -19,6 +19,7 @@ Teammates:
 
 当前任务进度见 [DEMO](http://ivanjiang.sinaapp.com/dailycost)，因为手头事情比较多，做得比较粗糙，目前仅仅实现了基本功能，用户体验很不好。不过 Web App 的优势就在于可以及时地 Update 嘛😁
 
+* App Icon 是抄的 [DailyCost](http://dailycost.com)，我道歉，之后有了更新会立即换掉
 * Icons from [saeedalipoor/icono](https://github.com/saeedalipoor/icono)
 * 其余代码都是手写
 
