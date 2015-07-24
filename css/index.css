@@ -3,42 +3,53 @@ html, body {
 	padding: 0;
 	background-color: #263238;
 	color: #C8D8DC;
-	font-family: "Source Han Sans CN", sans-serif;
+	font-family: "Lato", "Source Han Sans CN", "Microsoft Yahei", sans-serif;
+	font-weight: 300;
 }
 
-div#header div {
+.header {
 	float: left;
-	background-color: #80CBC4;
-	/*box-shadow: 0 0 1em 3px #263238;*/
 	text-align: center;
 	color: #263238;
 	line-height: 34px;
 	min-height: 34px;
 }
 
-i.icono-hamburger, i.icono-plus {
+i.icono-hamburger, i.icono-plus, i.icono-check, i.icono-caretLeft {
 	color: #263238;
 }
 
-div#hamburger {
-	width: 10%;
-	/*min-width: 34px;*/
+#hamburger	{ width: 10%; background: rgba(64, 176, 248, 1);}
+#title		{ width: 80%; background: rgba(64, 176, 248, 1);}
+#add-button	{ width: 10%; background: rgba(64, 176, 248, 1);}
+#save-button { width: 10%; background: rgba(64, 176, 248, 1);}
+#back-button { width: 10%; background: rgba(64, 176, 248, 1);}
+#overview, input {
+	width: 100%;
+	float: none;
+	background: -webkit-linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
+	background: -o-linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
+	background: linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
+	/*box-shadow: 0 0em 1em rgba(36, 135, 228, 1);*/
+	font-size: 8em;
+	font-weight: 300;
+	text-align: center;
+	color: #263238;
+	line-height: 2em;
 }
 
-div#title {
-	width: 80%;
+input {
+	border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
 }
 
-div#add {
-	width: 10%;
-	/*min-width: 34px;*/
-}
 
-div.clearup {
-	clear: both;
-}
+div.clearup { clear: both; }
 
 table {
+
 	padding: 1em;
 	text-align: center;
 	width: 100%;
@@ -53,10 +64,6 @@ td {
  	white-space:nowrap;
 }
 
-tr.alt td {
-	/*background-color: #CAD3DE;*/
-}
-
 td.icon {
 	width: 15%;
 }
@@ -69,10 +76,10 @@ td.record {
 	text-align: right;
 }
 
-td.cost {
+.cost {
 	color: #FF5370;
 }
-td.earn {
+.earn {
 	color: #91B4F5;
 }
 
@@ -81,16 +88,11 @@ td.date {
 	font-size: .5em;
 }
 
-i.icono-iphone, i.icono-market {
-	/*color: white;*/
-}
-
 div.copyright {
-	/*position: fixed;*/
-	background-color: #80CBC4;
+	background: rgba(36, 135, 228, 1);
 	bottom: 0em;
 	width: 100%;
 	text-align: center;
 	line-height: 24px;
-	color: #263238;
+	color: #C8D8DC;
 }
