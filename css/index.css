@@ -19,12 +19,13 @@ i.icono-hamburger, i.icono-plus, i.icono-check, i.icono-caretLeft {
 	color: #263238;
 }
 
-#hamburger	{ width: 10%; background: rgba(64, 176, 248, 1);}
-#title		{ width: 80%; background: rgba(64, 176, 248, 1);}
-#add-button	{ width: 10%; background: rgba(64, 176, 248, 1);}
-#save-button { width: 10%; background: rgba(64, 176, 248, 1);}
-#back-button { width: 10%; background: rgba(64, 176, 248, 1);}
-#overview, input {
+#hamburger, #add-button, #save-button, #back-button { 
+	width: 10%; background: rgba(64, 176, 248, 1);
+}
+#title {
+	width: 80%; background: rgba(64, 176, 248, 1);
+}
+#overview, input[type='number'] {
 	width: 100%;
 	float: none;
 	background: -webkit-linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
@@ -49,7 +50,6 @@ input {
 div.clearup { clear: both; }
 
 table {
-
 	padding: 1em;
 	text-align: center;
 	width: 100%;
@@ -95,4 +95,26 @@ div.copyright {
 	text-align: center;
 	line-height: 24px;
 	color: #C8D8DC;
+}
+
+div.categories {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 90%;
+	margin: auto;
+}
+
+div.category {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	float: left;
+	width: 25%;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+div.category.chosen {
+	background-color: rgba(36, 135, 228, 1);
+	border-radius: 1em;
 }

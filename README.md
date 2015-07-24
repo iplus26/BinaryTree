@@ -17,9 +17,11 @@ This repo is our [warmup task](https://github.com/baidu-ife/ife/blob/master/2015
 
 参考资料：
 
-* [Mobile Web Design with the Meta Viewport Tag](http://www.tuicool.com/articles/6zyuyaM)
 * [HTML5 LocalStorage 本地存储](http://www.cnblogs.com/xiaowei0705/archive/2011/04/19/2021372.html)
-* 加入 viewport，设置 apple-touch-icon & apple-mobile-web-app-title 等属性，让移动端页面更友好
+* 移动端页面更友好
+	* [HTML 5 <input> 属性](http://www.w3school.com.cn/html5/att_input_type.asp)
+	* [Everything You Always Wanted to Know About Touch Icons](https://mathiasbynens.be/notes/touch-icons), by [Mathias Bynens](https://github.com/mathiasbynens)
+	* [Mobile Web Design with the Meta Viewport Tag](http://www.tuicool.com/articles/6zyuyaM)
 
 TODO:
 
