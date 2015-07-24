@@ -17,8 +17,26 @@ This repo is our [warmup task](https://github.com/baidu-ife/ife/blob/master/2015
 
 参考资料：
 
+<<<<<<< HEAD
 * [Mobile Web Design with the Meta Viewport Tag](http://www.tuicool.com/articles/6zyuyaM)
 * [HTML5 LocalStorage 本地存储](http://www.cnblogs.com/xiaowei0705/archive/2011/04/19/2021372.html)
+=======
+* [HTML5 LocalStorage 本地存储](http://www.cnblogs.com/xiaowei0705/archive/2011/04/19/2021372.html)
+* 移动端页面更友好
+	* [HTML 5 <input> 属性](http://www.w3school.com.cn/html5/att_input_type.asp)
+	* [Everything You Always Wanted to Know About Touch Icons](https://mathiasbynens.be/notes/touch-icons), by [Mathias Bynens](https://github.com/mathiasbynens)
+	* [Mobile Web Design with the Meta Viewport Tag](http://www.tuicool.com/articles/6zyuyaM)
+
+TODO:
+
+* addRecord 页面
+	* input value 的样式存在问题；点击后清空
+	* 选择 cost / earn
+	* 选择分类
+	* 保存的逻辑
+
+* 样式优化
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 
 # Task 2
 

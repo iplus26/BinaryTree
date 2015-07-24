@@ -17,7 +17,11 @@ if (storage.data == null || storage.data == "") {
         category: 0,
         note: "App Store",
         type: -1,
+<<<<<<< HEAD
         num: 6,
+=======
+        num: -6,
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
         date: new Date()
     });
 
@@ -25,7 +29,11 @@ if (storage.data == null || storage.data == "") {
         category: 1,
         note: "电脑",
         type: -1,
+<<<<<<< HEAD
         num: 6000,
+=======
+        num: -6000,
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
         date: new Date()
     });
 
@@ -44,11 +52,18 @@ if (storage.data == null || storage.data == "") {
     storage.data = JSON.stringify(fake);
 }
 
+<<<<<<< HEAD
 // 格式化日期, 判断是否是今天/昨天
 var today = new Date();
 Date.prototype.today = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + today.getDate();
 Date.prototype.yesterday = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + (today.getDate() - 1);
 
+=======
+// 补充Date的相关函数，包括格式化日期、判断今天、昨天
+var today = new Date();
+Date.prototype.today = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + today.getDate();
+Date.prototype.yesterday = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + (today.getDate() - 1);
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 Date.prototype.format = function() {
     var str = this.getFullYear() + "/" + (this.getMonth() + 1) + "/" + this.getDate();
     if (str == this.today) return "今天";
@@ -64,8 +79,15 @@ var data;
     for (var i = 0; i < data.length; i++) {
         data[i].date = new Date(data[i].date);
     }
+<<<<<<< HEAD
     data.sort(function(a, b) {
         return a.date < b.date;
+=======
+
+    // Chrome 有 bug
+    data.sort(function(a, b) {
+        return Date.parse(b.date) - Date.parse(a.date);
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
     });
 } )();
 
@@ -80,9 +102,26 @@ var data;
     }
 } )();
 
+<<<<<<< HEAD
 // 底部统计代码
 document.querySelector(".copyright").innerHTML = "陪伴你" + document.querySelectorAll(".cost").length + "笔支出，" +
     document.querySelectorAll(".earn").length + "笔收入";
 
 // 清除数据
 // storage.removeItem("data");
+=======
+// 统计代码
+// document.querySelector(".count").innerHTML = document.querySelectorAll(".cost").length + "/" + document.querySelectorAll(".earn").length;
+
+// 清除数据
+// storage.removeItem("data");
+
+// 添加新的记录
+function addRecord() {
+    window.location.href = 'addRecord.html';
+}
+
+function more() {
+    window.location.href = 'index.html#buttom';
+}
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b

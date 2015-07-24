@@ -3,6 +3,7 @@ html, body {
 	padding: 0;
 	background-color: #263238;
 	color: #C8D8DC;
+<<<<<<< HEAD
 	font-family: "Source Han Sans CN", sans-serif;
 }
 
@@ -10,12 +11,21 @@ div#header div {
 	float: left;
 	background-color: #80CBC4;
 	/*box-shadow: 0 0 1em 3px #263238;*/
+=======
+	font-family: "Lato", "Source Han Sans CN", "Microsoft Yahei", sans-serif;
+	font-weight: 300;
+}
+
+.header {
+	float: left;
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 	text-align: center;
 	color: #263238;
 	line-height: 34px;
 	min-height: 34px;
 }
 
+<<<<<<< HEAD
 i.icono-hamburger, i.icono-plus {
 	color: #263238;
 }
@@ -38,6 +48,42 @@ div.clearup {
 	clear: both;
 }
 
+=======
+i.icono-hamburger, i.icono-plus, i.icono-check, i.icono-caretLeft {
+	color: #263238;
+}
+
+#hamburger, #add-button, #save-button, #back-button { 
+	width: 10%; background: rgba(64, 176, 248, 1);
+}
+#title {
+	width: 80%; background: rgba(64, 176, 248, 1);
+}
+#overview, input[type='number'] {
+	width: 100%;
+	float: none;
+	background: -webkit-linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
+	background: -o-linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
+	background: linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
+	/*box-shadow: 0 0em 1em rgba(36, 135, 228, 1);*/
+	font-size: 8em;
+	font-weight: 300;
+	text-align: center;
+	color: #263238;
+	line-height: 2em;
+}
+
+input {
+	border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+
+div.clearup { clear: both; }
+
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 table {
 	padding: 1em;
 	text-align: center;
@@ -53,10 +99,13 @@ td {
  	white-space:nowrap;
 }
 
+<<<<<<< HEAD
 tr.alt td {
 	/*background-color: #CAD3DE;*/
 }
 
+=======
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 td.icon {
 	width: 15%;
 }
@@ -69,10 +118,17 @@ td.record {
 	text-align: right;
 }
 
+<<<<<<< HEAD
 td.cost {
 	color: #FF5370;
 }
 td.earn {
+=======
+.cost {
+	color: #FF5370;
+}
+.earn {
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 	color: #91B4F5;
 }
 
@@ -81,6 +137,7 @@ td.date {
 	font-size: .5em;
 }
 
+<<<<<<< HEAD
 i.icono-iphone, i.icono-market {
 	/*color: white;*/
 }
@@ -88,9 +145,39 @@ i.icono-iphone, i.icono-market {
 div.copyright {
 	/*position: fixed;*/
 	background-color: #80CBC4;
+=======
+div.copyright {
+	background: rgba(36, 135, 228, 1);
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 	bottom: 0em;
 	width: 100%;
 	text-align: center;
 	line-height: 24px;
+<<<<<<< HEAD
 	color: #263238;
+=======
+	color: #C8D8DC;
+}
+
+div.categories {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 90%;
+	margin: auto;
+}
+
+div.category {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	float: left;
+	width: 25%;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+div.category.chosen {
+	background-color: rgba(36, 135, 228, 1);
+	border-radius: 1em;
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 }
