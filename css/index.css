@@ -14,8 +14,10 @@ html, body {
 	line-height: 34px;
 	min-height: 34px;
 }
-
-i.icono-hamburger, i.icono-plus, i.icono-check, i.icono-caretLeft {
+i.icono-hamburger {
+	color: rgba(64, 176, 248, 1);
+}
+i.icono-plus, i.icono-check, i.icono-caretLeft {
 	color: #263238;
 }
 
@@ -31,7 +33,6 @@ i.icono-hamburger, i.icono-plus, i.icono-check, i.icono-caretLeft {
 	background: -webkit-linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
 	background: -o-linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
 	background: linear-gradient(rgba(64, 176, 248, 1) 50%, rgba(36, 135, 228, 1));
-	/*box-shadow: 0 0em 1em rgba(36, 135, 228, 1);*/
 	font-size: 8em;
 	font-weight: 300;
 	text-align: center;
