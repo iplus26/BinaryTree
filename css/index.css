@@ -3,21 +3,60 @@ html, body {
 	padding: 0;
 	background-color: #263238;
 	color: #C8D8DC;
+<<<<<<< HEAD
+	font-family: "Source Han Sans CN", sans-serif;
+}
+
+div#header div {
+	float: left;
+	background-color: #80CBC4;
+	/*box-shadow: 0 0 1em 3px #263238;*/
+=======
 	font-family: "Lato", "Source Han Sans CN", "Microsoft Yahei", sans-serif;
 	font-weight: 300;
 }
 
 .header {
 	float: left;
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 	text-align: center;
 	color: #263238;
 	line-height: 34px;
 	min-height: 34px;
 }
+<<<<<<< HEAD
 i.icono-hamburger {
 	color: rgba(64, 176, 248, 1);
 }
 i.icono-plus, i.icono-check, i.icono-caretLeft {
+=======
+
+<<<<<<< HEAD
+i.icono-hamburger, i.icono-plus {
+	color: #263238;
+}
+
+div#hamburger {
+	width: 10%;
+	/*min-width: 34px;*/
+}
+
+div#title {
+	width: 80%;
+}
+
+div#add {
+	width: 10%;
+	/*min-width: 34px;*/
+}
+
+div.clearup {
+	clear: both;
+}
+
+=======
+i.icono-hamburger, i.icono-plus, i.icono-check, i.icono-caretLeft {
+>>>>>>> origin/master
 	color: #263238;
 }
 
@@ -50,6 +89,7 @@ input {
 
 div.clearup { clear: both; }
 
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 table {
 	padding: 1em;
 	text-align: center;
@@ -65,6 +105,13 @@ td {
  	white-space:nowrap;
 }
 
+<<<<<<< HEAD
+tr.alt td {
+	/*background-color: #CAD3DE;*/
+}
+
+=======
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 td.icon {
 	width: 15%;
 }
@@ -77,10 +124,17 @@ td.record {
 	text-align: right;
 }
 
+<<<<<<< HEAD
+td.cost {
+	color: #FF5370;
+}
+td.earn {
+=======
 .cost {
 	color: #FF5370;
 }
 .earn {
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 	color: #91B4F5;
 }
 
@@ -89,12 +143,25 @@ td.date {
 	font-size: .5em;
 }
 
+<<<<<<< HEAD
+i.icono-iphone, i.icono-market {
+	/*color: white;*/
+}
+
+div.copyright {
+	/*position: fixed;*/
+	background-color: #80CBC4;
+=======
 div.copyright {
 	background: rgba(36, 135, 228, 1);
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 	bottom: 0em;
 	width: 100%;
 	text-align: center;
 	line-height: 24px;
+<<<<<<< HEAD
+	color: #263238;
+=======
 	color: #C8D8DC;
 }
 
@@ -118,4 +185,5 @@ div.category {
 div.category.chosen {
 	background-color: rgba(36, 135, 228, 1);
 	border-radius: 1em;
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
 }

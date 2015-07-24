@@ -12,6 +12,7 @@ var table = document.querySelector('table');
 table.innerHTML = '';
 
 // 如果没有数据, 则制造假数据
+<<<<<<< HEAD
 function fakeData() {
     if (typeof storage.data === 'undefined') {
         var fake = [];
@@ -28,12 +29,67 @@ function fakeData() {
 
         storage.data = JSON.stringify(fake);
     }
+=======
+if (storage.data == null || storage.data == "") {
+    var fake = [];
+
+    fake.push({
+        category: 0,
+        note: "App Store",
+        type: -1,
+<<<<<<< HEAD
+        num: 6,
+=======
+        num: -6,
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
+        date: new Date()
+    });
+
+    fake.push({
+        category: 1,
+        note: "电脑",
+        type: -1,
+<<<<<<< HEAD
+        num: 6000,
+=======
+        num: -6000,
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
+        date: new Date()
+    });
+
+    ( function fakeData() {
+        for (var i = 0; i < 260; i++) {
+            fake.push({
+                category: parseInt(Math.random() * 10),
+                note: "随机假数据",
+                type: Math.random() > 0.5 ? 1 : -1,
+                num: (Math.random() * 1000).toFixed(2),
+                date: new Date().setDate(22 - Math.random() * 100)
+            });
+        }
+    } )();
+
+    storage.data = JSON.stringify(fake);
+>>>>>>> origin/master
 }
 
+<<<<<<< HEAD
+// 格式化日期, 判断是否是今天/昨天
+var today = new Date();
+Date.prototype.today = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + today.getDate();
+Date.prototype.yesterday = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + (today.getDate() - 1);
+
+=======
 // 补充Date的相关函数，包括格式化日期、判断今天、昨天
 var today = new Date();
+<<<<<<< HEAD
 Date.prototype.today = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
 Date.prototype.yesterday = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + (today.getDate() - 1);
+=======
+Date.prototype.today = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + today.getDate();
+Date.prototype.yesterday = today.getFullYear() + "/" + (today.getMonth() + 1) + "/" + (today.getDate() - 1);
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
+>>>>>>> origin/master
 Date.prototype.format = function() {
     var str = this.getFullYear() + '/' + (this.getMonth() + 1) + '/' + this.getDate();
     if (str == this.today) return '今天';
@@ -51,9 +107,14 @@ var data;
     for (var i = 0; i < data.length; i++) {
         data[i].date = new Date(data[i].date);
     }
+<<<<<<< HEAD
+    data.sort(function(a, b) {
+        return a.date < b.date;
+=======
 
     data.sort(function(a, b) {
         return Date.parse(b.date) - Date.parse(a.date);
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
     });
 
 } )();
@@ -84,6 +145,20 @@ var category_icons = [
     document.querySelector('div#overview').innerText = statistics.toFixed(2);
 } )();
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+// 底部统计代码
+document.querySelector(".copyright").innerHTML = "陪伴你" + document.querySelectorAll(".cost").length + "笔支出，" +
+    document.querySelectorAll(".earn").length + "笔收入";
+
+// 清除数据
+// storage.removeItem("data");
+=======
+// 统计代码
+// document.querySelector(".count").innerHTML = document.querySelectorAll(".cost").length + "/" + document.querySelectorAll(".earn").length;
+
+>>>>>>> origin/master
 // 清除数据
 function clearStorage() {
     storage.removeItem('data');
@@ -95,8 +170,14 @@ function addRecord() {
 }
 
 function more() {
+<<<<<<< HEAD
     // window.location.href = 'index.html#buttom';
     if (confirm('开发模式：清除全部数据! ')) {
         clearStorage();
     }
 }
+=======
+    window.location.href = 'index.html#buttom';
+}
+>>>>>>> 9d49e4e1099635c7a5045c1a27fa62179212880b
+>>>>>>> origin/master
